@@ -12,11 +12,20 @@ public class Main {
     Employee mikeWilson = new Employee("Mike", "Wilson", 3245);
 
     EmployeeLinkedList list = new EmployeeLinkedList();
+
+    System.out.println("\nIs the list empty at this moment? : " + list.isEmpty());
+
     list.addToFront(janeJones);
     list.addToFront(johnDoe);
     list.addToFront(marySmith);
     list.addToFront(mikeWilson);
 
+    System.out.println("\n" + list.getSize() + "\n");
+
+    list.printList();
+
+    list.removeFromFront();
+    System.out.println("\n" + list.getSize() + "\n");
     list.printList();
 
   }
